@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>LaLiga GAME Center</title>
+</head>
+<body>
+    <header>
+        <div class="wrap-logo">
+        <img src="img/IMG_0698.jpg" alt="" href="#logo" class="logo">
+        </div>
+        <nav>
+          <a href="#home">Главная</a>
+          <a href="#contact">Контакты</a>
+          <a href="#about">О нас</a>
+        </nav>
+    </header>
+    <main>
+        <div class="main-site">
+            <p>LaLiga Game Center - Лучшие в Азербайджане</p>
+        </div>
+    </main>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/image.png" alt="Image 1"><div class="slide-text">📍Torqovaya <button style="background-color: black; color: white; border-radius: 5px;">Детальнее</button></div></div>
+          <div class="swiper-slide"><img src="img/image2.png" alt="Image 3"><div class="slide-text">📍Nizami <button style="background-color: black; color: white; border-radius: 5px;">Детальнее</button></div></div>
+          <div class="swiper-slide"><img src="img/image3.png" alt="Image 4"><div class="slide-text">📍Narimanov <button style="background-color: black; color: white; border-radius: 5px;">Детальнее</button></div></div>
+          <div class="swiper-slide"><img src="img/image4.png" alt="Image 5"><div class="slide-text">📍Ehmedli <button style="background-color: black; color: white; border-radius: 5px;">Детальнее</button></div></div>
+          <div class="swiper-slide"><img src="img/image.png" alt="Image 2"><div class="slide-text">📍Genclic <button style="background-color: black; color: white; border-radius: 5px;">Детальнее</button></div></div>
+          <div class="swiper-slide"><img src="img/image2.png" alt="Image 4"><div class="slide-text">📍Hüseyn Cavid <button style="background-color: black; color: white; border-radius: 5px;">Детальнее</button></div></div>
+        </div>
+      </div>
+</body>
+            
+<script>
+function togglePopup() {
+        const popup = document.getElementById("phone-popup");
+        popup.classList.toggle("hidden");
+    }
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1, // Show 5 slides
+    centeredSlides: true, // Keep active slide centered
+    spaceBetween: 10, // Set space between slides
+    loop: true, // Enable infinite loop mode
+    slideToClickedSlide: true, // Click to center any slide
+    navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    speed: 300,
+
+    // Responsive breakpoints for smaller screens
+    breakpoints: {
+
+
+    },
+
+    // Additional settings for smooth looping
+    loopAdditionalSlides: 1, // Ensure enough slides are duplicated for smooth loop
+    watchSlidesProgress: true, // Keeps track of slides for smooth transitions
+  });
+});
+
+</script>
+</html>
