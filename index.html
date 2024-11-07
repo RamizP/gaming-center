@@ -50,7 +50,6 @@ function togglePopup() {
     slidesPerView: 1, // Show 5 slides
     centeredSlides: true, // Keep active slide centered
     spaceBetween: 10, // Set space between slides
-    loop: true, // Enable infinite loop mode
     slideToClickedSlide: true, // Click to center any slide
     navigation: {
           nextEl: '.swiper-button-next',
@@ -69,7 +68,7 @@ function togglePopup() {
     },
 
     // Additional settings for smooth looping
-    loopAdditionalSlides: 1, // Ensure enough slides are duplicated for smooth loop
+    loopAdditionalSlides: 0, // Ensure enough slides are duplicated for smooth loop
     watchSlidesProgress: true, // Keeps track of slides for smooth transitions
   });
 });
